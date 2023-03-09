@@ -30,6 +30,7 @@
 
 .navbar-links {
     font-size: 120%;
+    margin-right: 30px;
 }
 
 .nav-link:hover {
@@ -81,6 +82,7 @@
 .main-page-div {
     display: flex;
     margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .main-page-left {
@@ -173,9 +175,47 @@ footer {
 }
 
 .about-page-left {
-    width: 90%;
+    width: 50%;
+    padding: 40px;
+    position: relative;
 }
 
 .about-image {
     width: 100%;
+    border-radius: 25px;
+    opacity: 95%;
+    padding: 20px;
+    border: 2px solid var(--purple);
+}
+
+.overlay-about {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    color: black;
+}
+
+.information-p.about-p {
+    font-size: 20px;
+}
+
+.project-image-div {
+    margin: 20px 10px 0;
+    height: 100%;
+    background-color: #ffffffcd;
+    padding-top: 20px;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.project-image-1 {
+    width: 95%;
+}
+
+.project-image-23 {
+    width: 46%;
+}
+
+.project-image-4 {
+    width: 95%;
 }
