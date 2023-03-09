@@ -206,6 +206,7 @@ footer {
     padding-top: 20px;
     border-radius: 15px;
     padding-bottom: 20px;
+    border: 1px solid var(--blue);
 }
 
 .project-image-1 {
@@ -214,8 +215,13 @@ footer {
 
 .project-image-23 {
     width: 46%;
+    border: 1px solid var(--purple);
 }
 
 .project-image-4 {
     width: 95%;
+}
+
+.page-headers.line-2.theo-header {
+    width: 40%;
 }
