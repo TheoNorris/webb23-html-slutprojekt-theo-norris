@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tilt+Neon&display=swap');
+:root {
+    --big-text: 'Tilt Neon', cursive;
+    --my-padding: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Tilt Neon', cursive;
+    letter-spacing: 2px;
+}
+
+.navbar-logo {
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1);
+}
+
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+}
+
+.navbar-links {
+    font-size: 120%;
+}
+
+.nav-link:hover {
+    color: rgb(0 112 255);
+}
+
+.overlay {
+    height: 100%;
+    background: linear-gradient(90deg, #ffffffb8, #ffffff);
+    ;
+    z-index: 2;
+    max-width: 100vw;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100%;
+    background: url("../images/background-image.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
