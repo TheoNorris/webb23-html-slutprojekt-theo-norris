@@ -254,3 +254,34 @@ footer {
 .main-page-div.project-page-div {
     margin-bottom: 2%;
 }
+
+.form-container {
+    padding: 30px 30px 10px;
+    width: 70%;
+    background: #ffffff63;
+    margin: 40px auto;
+}
+
+.form-label {
+    display: flex;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contact-h1 {
+    color: var(--purple);
+    margin-bottom: 10px;
+}
+
+button#sub-but {
+    margin-top: 15px;
+    background-color: var(--blue);
+    border: none;
+}
+
+button#sub-but:hover {
+    background-color: var(--pink);
+}
