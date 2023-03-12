@@ -79,7 +79,7 @@
     font-size: 400%;
     color: var(--purple);
     margin: 0 auto;
-    width: 30%;
+    width: 40%;
     border-bottom: 3px solid;
     padding-bottom: var(--my-padding);
 }
@@ -204,6 +204,10 @@ footer {
     padding-top: 30px;
 }
 
+.responsive-div {
+    display: none;
+}
+
 .project-image-div {
     margin: 20px 10px 0;
     height: 100%;
@@ -219,7 +223,7 @@ footer {
 }
 
 .project-image-23 {
-    width: 46%;
+    width: 45%;
     border: 1px solid var(--purple);
 }
 
@@ -282,6 +286,22 @@ button#sub-but:hover {
     background-color: var(--pink);
 }
 
+@media (max-width: 1280px) {
+    .page-headers.line-2 {
+        width: 40%;
+    }
+    .information-p.project-p {
+        padding: var(--my-padding) 0 0 10px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .information-p.project-p {
+        font-size: 90%;
+    }
+}
+
 @media (max-width: 991px) {
     .main-page-div.index-div {
         flex-direction: column-reverse;
@@ -297,10 +317,16 @@ button#sub-but:hover {
         padding: 0 10px;
     }
     .page-headers.line-2 {
-        width: 50%;
+        width: 80%;
     }
     .information-p {
         text-align: center;
+    }
+    .information-p.project-p {
+        text-align: left;
+    }
+    .project-image-23 {
+        width: 100%;
     }
 }
 
@@ -316,6 +342,36 @@ button#sub-but:hover {
     }
     .information-p {
         font-size: 100%;
+    }
+    .main-page-div {
+        flex-direction: column-reverse;
+    }
+    .main-page-project-right {
+        width: 100%;
+    }
+    .main-page-project-left {
+        display: none;
+    }
+    .responsive-div {
+        display: contents;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .responsive-image {
+        margin: 20px 0 10px;
+    }
+    .information-p.project-p {
+        padding-top: 10px;
+    }
+    .website-link {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .information-p.project-p {
+        padding-left: 0;
+    }
+    .project-image {
+        width: 95%;
     }
 }
 
@@ -347,6 +403,36 @@ button#sub-but:hover {
     }
     .theo-tag {
         font-size: 12px;
+    }
+    .main-page-div {
+        flex-direction: column-reverse;
+    }
+    .main-page-project-right {
+        width: 100%;
+    }
+    .main-page-project-left {
+        display: none;
+    }
+    .responsive-div {
+        display: contents;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .responsive-image {
+        margin: 20px 0 10px;
+    }
+    .information-p.project-p {
+        padding-top: 10px;
+    }
+    .website-link {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .information-p.project-p {
+        padding-left: 0;
+    }
+    .project-image {
+        width: 95%;
     }
 }
 
