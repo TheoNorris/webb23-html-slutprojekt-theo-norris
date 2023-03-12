@@ -59,12 +59,17 @@
         <div class="wrapper">
             <div class="overlay">
                 <h1 class="page-headers line-2 about-header">Om mig</h1>
-                <div class="main-page-div">
+                <div class="main-page-div about-page-div">
                     <div class="about-page-left">
-                        <img class="about-image" src="assets/images/me.png" alt="Theo">
+                        <picture>
+                            <source media="(min-width: 1000px)" srcset="assets/images/me.png">
+                            <source media="(min-width: 650px)" srcset="assets/images/mepad.png">
+                            <source media="(min-width: 0px)" srcset="assets/images/memobile.png">
+                            <img src="assets/images/me.png" class="about-image">
+                        </picture>
                         <div class="overlay-about"></div>
                     </div>
-                    <div class="main-page-right">
+                    <div class="main-page-right about-page-right">
                         <p class="top-p information-p about-p">Som en individ med en djup förpliktelse att leverera högkvalitativt arbete är mitt främsta mål när jag tar på mig ett projekt att uppnå en balans mellan estetik och användarvänlighet. Mitt tillvägagångssätt innebär en medveten
                             integrering av principer för användarupplevelse (UX) och användargränssnitt (UI) för att säkerställa att det slutliga resultatet inte bara är visuellt tilltalande utan också funktionellt och lätt att navigera. </p>
 
@@ -72,7 +77,7 @@
                             Med utgångspunkt från mina olika professionella erfarenheter har jag utvecklat en robust uppsättning färdigheter som gör att jag kan fokusera på projektets mål samtidigt som jag håller kundens behov i fokus. Detta inkluderar att vara målinriktad, kundcentrerad
                             och ha en skarp uppmärksamhet på detaljer. Med varje projekt jag tar på mig strävar jag alltid efter att leverera enastående resultat som överträffar förväntningarna samtidigt som jag följer strikta tidsramar och resursbegränsningar.</p>
 
-                        <p class="information-p about-p">Sammanfattningsvis fokuserar min arbetsfilosofi på att producera högkvalitativt arbete som är både estetiskt tilltalande och funktionellt samtidigt som jag upprätthåller en stark fokus på kundnöjdhet och uppmärksamhet på detaljer.</p>
+                        <p class="information-p about-p about-p-bottom">Sammanfattningsvis fokuserar min arbetsfilosofi på att producera högkvalitativt arbete som är både estetiskt tilltalande och funktionellt samtidigt som jag upprätthåller en stark fokus på kundnöjdhet och uppmärksamhet på detaljer.</p>
                     </div>
                 </div>
             </div>

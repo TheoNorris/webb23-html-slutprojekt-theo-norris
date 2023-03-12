@@ -294,6 +294,27 @@ button#sub-but:hover {
         padding: var(--my-padding) 0 0 10px;
         margin-left: 10px;
     }
+    .about-image {
+        width: 100%;
+    }
+    .main-page-div.about-page-div {
+        display: unset;
+    }
+    .about-page-left {
+        float: left;
+        height: 100%;
+        padding: 40px 40px var(--my-padding);
+    }
+    .main-page-right.about-page-right {
+        margin: auto;
+        width: 100%;
+    }
+    .information-p.about-p {
+        text-align: left;
+    }
+    .information-p.about-p.about-p-bottom {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 1025px) {
@@ -338,7 +359,6 @@ button#sub-but:hover {
     .page-headers.line-2 {
         font-size: 290%;
         padding-bottom: 10px;
-        margin-top: ;
     }
     .information-p {
         font-size: 100%;
@@ -373,6 +393,17 @@ button#sub-but:hover {
     .project-image {
         width: 95%;
     }
+    .top-p.information-p.about-p {
+        padding-top: 10px;
+    }
+    .about-page-left {
+        width: 100%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+    .information-p.about-p {
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 420px) {
@@ -389,7 +420,7 @@ button#sub-but:hover {
         padding: 0 15px;
     }
     .page-headers.line-2 {
-        width: 80%;
+        width: 90%;
     }
     .top-p.information-p {
         padding-top: 10px;
@@ -427,6 +458,7 @@ button#sub-but:hover {
     .website-link {
         font-size: 20px;
         margin-bottom: 20px;
+        margin-top: 20px;
     }
     .information-p.project-p {
         padding-left: 0;
