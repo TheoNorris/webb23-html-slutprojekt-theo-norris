@@ -311,6 +311,15 @@ button#sub-but:hover {
     .nav-link.dropdown-toggle.active {
         color: white;
     }
+    button.navbar-toggler {
+        background-color: var(--darkmode-pink);
+    }
+    .navbar-brand-light {
+        display: none;
+    }
+    .navbar-brand-dark {
+        display: unset;
+    }
     .overlay {
         background: linear-gradient(90deg, #00000083, #000000);
     }
@@ -334,6 +343,9 @@ button#sub-but:hover {
     }
     .project-thumb-info {
         color: rgb(255, 255, 255);
+    }
+    .project-image-div {
+        background-color: #000000cd;
     }
     .website-link {
         color: var(--darkmode-green);
