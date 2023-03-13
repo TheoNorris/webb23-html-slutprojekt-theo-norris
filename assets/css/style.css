@@ -5,6 +5,8 @@
     --blue: rgb(0 112 255);
     --purple: rgb(145, 31, 145);
     --pink: rgb(241 0 255);
+    --darkmode-pink: rgb(255 0 255);
+    --darkmode-green: rgb(12 255 0);
 }
 
 * {
@@ -23,6 +25,10 @@
 
 .navbar-logo:hover {
     transform: scale(1.1);
+}
+
+.navbar-brand-dark {
+    display: none;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -44,6 +50,7 @@
 
 .overlay {
     height: 100%;
+    min-height: 100vh;
     background: linear-gradient(90deg, #ffffffb8, #ffffff);
     z-index: 2;
     max-width: 100vw;
@@ -54,6 +61,7 @@
 .wrapper {
     width: 100vw;
     height: auto;
+    min-height: 100%;
     background: url("../images/background-image.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -223,7 +231,7 @@ footer {
 }
 
 .project-image-23 {
-    width: 45%;
+    width: 46%;
     border: 1px solid var(--purple);
 }
 
@@ -286,6 +294,89 @@ button#sub-but:hover {
     background-color: var(--pink);
 }
 
+@media (prefers-color-scheme:dark) {
+    nav {
+        background: black;
+        border-bottom: 1px solid rgb(166, 166, 166);
+    }
+    .nav-link.colour.active {
+        color: white;
+    }
+    .nav-link {
+        color: var(--darkmode-green);
+    }
+    .navbar-link:hover {
+        color: var(--darkmode-pink);
+    }
+    .nav-link.dropdown-toggle.active {
+        color: white;
+    }
+    .overlay {
+        background: linear-gradient(90deg, #00000083, #000000);
+    }
+    * {
+        color: white;
+    }
+    img {
+        filter: brightness(85%);
+    }
+    .thumnail-link {
+        background-color: #00000083;
+    }
+    .page-headers {
+        color: var(--darkmode-green);
+    }
+    .page-headers.line-2 {
+        color: var(--darkmode-pink);
+    }
+    .project-name {
+        color: var(--darkmode-green);
+    }
+    .project-thumb-info {
+        color: rgb(255, 255, 255);
+    }
+    .website-link {
+        color: var(--darkmode-green);
+    }
+    .website-link-a {
+        color: var(--darkmode-pink);
+    }
+    .website-link-a:hover {
+        color: var(--darkmode-green);
+    }
+    .form-container {
+        background-color: #00000083;
+    }
+    .contact-h1 {
+        color: var(--darkmode-pink);
+    }
+    button#sub-but {
+        background-color: var(--darkmode-pink);
+    }
+    button#sub-but:hover {
+        background-color: var(--darkmode-green);
+    }
+    footer {
+        background-color: black;
+        border-top: 1px solid rgb(166, 166, 166);
+        color: white;
+    }
+    .social-links {
+        font-size: 22px;
+        color: var(--darkmode-pink);
+    }
+    .social-links:hover {
+        font-size: 22px;
+        color: var(--darkmode-green);
+    }
+    .theo-tag {
+        color: var(--darkmode-green);
+    }
+    .theo-tag:hover {
+        color: var(--darkmode-pink);
+    }
+}
+
 @media (max-width: 1280px) {
     .page-headers.line-2 {
         width: 40%;
@@ -321,6 +412,9 @@ button#sub-but:hover {
     .information-p.project-p {
         font-size: 90%;
     }
+    .project-image-23 {
+        width: 45%;
+    }
 }
 
 @media (max-width: 991px) {
@@ -352,6 +446,9 @@ button#sub-but:hover {
 }
 
 @media (max-width: 595px) {
+    .navbar-logo {
+        height: 35px;
+    }
     .page-headers {
         font-size: 250%;
         margin-top: 10px;
@@ -404,26 +501,12 @@ button#sub-but:hover {
     .information-p.about-p {
         margin-bottom: 0;
     }
-}
-
-@media (max-width: 420px) {
-    .thumnail-link {
-        width: 100%;
-    }
-    .main-page-left.index-left {
-        margin-top: 20px;
-    }
-    .information-p {
-        text-align: left;
-    }
-    .project-thumb-info {
-        padding: 0 15px;
-    }
-    .page-headers.line-2 {
+    .form-container {
         width: 90%;
+        padding: 15px 15px 10px;
     }
-    .top-p.information-p {
-        padding-top: 10px;
+    button#sub-but {
+        margin: 0;
     }
     footer {
         font-size: 10px;
@@ -434,6 +517,26 @@ button#sub-but:hover {
     }
     .theo-tag {
         font-size: 12px;
+    }
+    @media (max-width: 420px) {
+        .thumnail-link {
+            width: 100%;
+        }
+        .main-page-left.index-left {
+            margin-top: 20px;
+        }
+        .information-p {
+            text-align: left;
+        }
+        .project-thumb-info {
+            padding: 0 15px;
+        }
+        .page-headers.line-2 {
+            width: 90%;
+        }
+        .top-p.information-p {
+            padding-top: 10px;
+        }
     }
     .main-page-div {
         flex-direction: column-reverse;
