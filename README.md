@@ -6,15 +6,15 @@ I am creating this project to showcase some of the projects I have created so fa
 
 ## Wireframes
 
-My wireframes were made using Justinminds. You can view them [here](assets/readme-documents/wireframes).
+My wireframes were made using Justinminds. You can view them [here](assets/wireframes).
 
-![menu items](/assets/readme-documents/mainpage.png)
+![mainpage](/assets/images/mainpage.png)
 
  ## UX
  
  This website has been created for anyone that is interested in viewing the work that I have created so far as a web developer. The website will be an artistic, easy to use website for anyone that is interested in learning more about the projects I have created and contacting me in regards to this.  
 
- ![menu items](/assets/readme-documents/responsive.png)
+ ![responsiveness](/assets/images/responsive.png)
 
  * As a user I can see what the main focus of the website is.
  * As a user I can navigate myself to any social media the creator has.
