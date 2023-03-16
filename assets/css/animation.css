@@ -1,6 +1,8 @@
+/*-------Variable--------*/
 :root {
   --big-text: "Permanent Marker", cursive;
 }
+/*-------Animation for header on inmdex.html--------*/
 .intro-1 {
   animation: intro-text 1.3s;
 }
