@@ -1,124 +1,273 @@
 <html lang="en">
-
-<head>
+  <head>
     <!--Meta tags-->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!--SEO-->
-    <meta name="description" content="Den här websida är en portfolio för flera projekt som Theo Norris har gjort under sin tid som en webbutvecklare.">
-    <meta name="keywords" content="webbutvecklare, webbutveckling, webb, coding, kod, css, html, javascript, grit academy">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Den här websida är en portfolio för flera projekt som Theo Norris har gjort under sin tid som en webbutvecklare."
+    />
+    <meta
+      name="keywords"
+      content="webbutvecklare, webbutveckling, webb, coding, kod, css, html, javascript, grit academy"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Theo Norris - Josh leedam Photography</title>
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!--Bootstrap, fontawesome, css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/f14b07e4b8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f14b07e4b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!--Navbar-->
     <nav id="navbar-css" class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-logo navbar-brand navbar-brand-light" href="index.html"><img class="navbar-logo" src="assets/images/TN.png" alt="Theo Norris"></a>
-            <a class="navbar-logo navbar-brand navbar-brand-dark" href="index.html"><img class="navbar-logo" src="assets/images/TN2.png" alt="Theo Norris"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="container-fluid">
+        <a class="navbar-logo navbar-brand navbar-brand-light" href="index.html"
+          ><img
+            class="navbar-logo"
+            src="assets/images/TN.png"
+            alt="Theo Norris"
+        /></a>
+        <a class="navbar-logo navbar-brand navbar-brand-dark" href="index.html"
+          ><img
+            class="navbar-logo"
+            src="assets/images/TN2.png"
+            alt="Theo Norris"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-links">
+            <li class="nav-item">
+              <a class="nav-link colour" href="index.html">Hem</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projekt
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="sleek.html">Sleek Web</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="theo.html"
+                    >Theo Norris web developer</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="josh.html"
+                    >Josh Leedam Photography</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="uk.html">UK STAND UP</a></li>
+              </ul>
+            </li>
 
-                <ul class="navbar-nav navbar-links">
-                    <li class="nav-item">
-                        <a class="nav-link colour" href="index.html">Hem</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Projekt
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="sleek.html">Sleek Web</a></li>
-                            <li><a class="dropdown-item" href="theo.html">Theo Norris web developer</a></li>
-                            <li><a class="dropdown-item" href="josh.html">Josh Leedam Photography</a></li>
-                            <li><a class="dropdown-item" href="uk.html">UK STAND UP</a></li>
-                        </ul>
-                        <li class="nav-item">
-                            <a class="nav-link colour" href="about.html">Om mig</a>
-                        </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link colour" href="contact.html">Kontakt</a>
-                    </li>
-                </ul>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link colour" href="about.html">Om mig</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link colour" href="contact.html">Kontakt</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <section>
-        <div class="wrapper">
-            <div class="overlay">
-                <h1 class="page-headers">UK</h1>
-                <h1 class="page-headers line-2">Stand up</h1>
-                <div class="main-page-div">
-                    <div class="main-page-left main-page-project-left">
-                        <div class="project-container">
-                            <div class="project-thumnail project-image-div project-image-1">
-                                <img class="project-image" src="assets/images/uk.png" alt="UK STAND UP">
-                            </div>
-                            <div class="project-thumnail project-image-div project-image-23">
-                                <img class="project-image" src="assets/images/uk2.png" alt="UK STAND UP">
-                            </div>
-                            <div class="project-thumnail project-image-div project-image-23">
-                                <img class="project-image" src="assets/images/uk3.png" alt="UK STAND UP">
-                            </div>
-                            <div class="project-thumnail project-image-div project-image-4">
-                                <img class="project-image" src="assets/images/uk4.png" alt="UK STAND UP">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-page-right main-page-project-right">
-                        <div class="project-thumnail project-image-div project-image-1 responsive-div">
-                            <img class="project-image responsive-image" src="assets/images/uk.png" alt="UK STAND UP">
-                        </div>
-                        <p class="top-p information-p project-p">UK STAND UP var en API-baserad webbplats som syftade till att visa upp den rika och mångfacetterade talangen hos brittiska artister. Webbapplikationen utnyttjade en API för att hämta en mängd information om brittiska artister,
-                            inklusive länkar till deras Spotify-konton, detaljerad biografisk information och profilbilder. Dessutom samlade API:et data om eventuella sociala medielänkar som hörde till artisterna, såsom deras YouTube-kanaler, vilket gjorde
-                            det möjligt för användarna att engagera sig med artisterna över flera plattformar.</p>
-                        <div class="project-thumnail project-image-div project-image-1 responsive-div">
-                            <img class="project-image responsive-image" src="assets/images/uk2.png" alt="UK STAND UP">
-                        </div>
-                        <p class="information-p project-p">
-                            Förutom att tillhandahålla information om brittiska artister, innehöll webbplatsen även en kort men insiktsfull historia om brittisk rapmusik och dess utveckling. Detta avsnitt syftade till att utbilda användarna om uppkomsten och tillväxten av den brittiska
-                            rapscenen och dess betydelse för den brittiska musikkulturen.
-
-                        </p>
-                        <div class="project-thumnail project-image-div project-image-1 responsive-div">
-                            <img class="project-image responsive-image" src="assets/images/uk3.png" alt="UK STAND UP">
-                        </div>
-                        <p class="information-p project-p">Trots den felfria koden och designen på webbplatsen är den API som den byggde på inte längre funktionsduglig, vilket har gjort att applikationen inte längre kan hämta den tidigare nämnda artistinformationen. Denna olyckliga utveckling
-                            visar vikten av att upprätthålla funktionsdugliga API:er, som spelar en avgörande roll för att möjliggöra att webbapplikationer kan leverera värdefull information till sina användare.</p>
-                        <div class="project-thumnail project-image-div project-image-1 responsive-div">
-                            <img class="project-image responsive-image" src="assets/images/uk4.png" alt="UK STAND UP">
-                        </div>
-                    </div>
+      <!--Background image and overlay-->
+      <div class="wrapper">
+        <div class="overlay">
+          <h1 class="page-headers uk-header">UK</h1>
+          <h1 class="page-headers line-2">Stand up</h1>
+          <!--Flexbox which contains images of project which are also in a flexbox-->
+          <div class="main-page-div">
+            <div class="main-page-left main-page-project-left">
+              <div class="project-container">
+                <div class="project-thumnail project-image-div project-image-1">
+                  <img
+                    class="project-image"
+                    src="assets/images/uk.png"
+                    alt="UK STAND UP"
+                  />
                 </div>
-                <h3 class="website-link">Du kan hitta den här webbplatsen <a target="_blank" class="website-link-a" href="https://theonorris.github.io/UK-Stand-Up/">här</a></h3>
+                <div
+                  class="project-thumnail project-image-div project-image-23"
+                >
+                  <img
+                    class="project-image"
+                    src="assets/images/uk2.png"
+                    alt="UK STAND UP"
+                  />
+                </div>
+                <div
+                  class="project-thumnail project-image-div project-image-23"
+                >
+                  <img
+                    class="project-image"
+                    src="assets/images/uk3.png"
+                    alt="UK STAND UP"
+                  />
+                </div>
+                <div class="project-thumnail project-image-div project-image-4">
+                  <img
+                    class="project-image"
+                    src="assets/images/uk4.png"
+                    alt="UK STAND UP"
+                  />
+                </div>
+              </div>
             </div>
+            <!--Right div which contains information on the project-->
+            <div class="main-page-right main-page-project-right">
+              <div
+                class="project-thumnail project-image-div project-image-1 responsive-div"
+              >
+                <img
+                  class="project-image responsive-image"
+                  src="assets/images/uk.png"
+                  alt="UK STAND UP"
+                />
+              </div>
+              <p class="top-p information-p project-p">
+                UK STAND UP var en API-baserad webbplats som syftade till att
+                visa upp den rika och mångfacetterade talangen hos brittiska
+                artister. Webbapplikationen utnyttjade en API för att hämta en
+                mängd information om brittiska artister, inklusive länkar till
+                deras Spotify-konton, detaljerad biografisk information och
+                profilbilder. Dessutom samlade API:et data om eventuella sociala
+                medielänkar som hörde till artisterna, såsom deras
+                YouTube-kanaler, vilket gjorde det möjligt för användarna att
+                engagera sig med artisterna över flera plattformar.
+              </p>
+              <div
+                class="project-thumnail project-image-div project-image-1 responsive-div"
+              >
+                <img
+                  class="project-image responsive-image"
+                  src="assets/images/uk2.png"
+                  alt="UK STAND UP"
+                />
+              </div>
+              <p class="information-p project-p">
+                Förutom att tillhandahålla information om brittiska artister,
+                innehöll webbplatsen även en kort men insiktsfull historia om
+                brittisk rapmusik och dess utveckling. Detta avsnitt syftade
+                till att utbilda användarna om uppkomsten och tillväxten av den
+                brittiska rapscenen och dess betydelse för den brittiska
+                musikkulturen.
+              </p>
+              <div
+                class="project-thumnail project-image-div project-image-1 responsive-div"
+              >
+                <img
+                  class="project-image responsive-image"
+                  src="assets/images/uk3.png"
+                  alt="UK STAND UP"
+                />
+              </div>
+              <p class="information-p project-p">
+                Trots den felfria koden och designen på webbplatsen är den API
+                som den byggde på inte längre funktionsduglig, vilket har gjort
+                att applikationen inte längre kan hämta den tidigare nämnda
+                artistinformationen. Denna olyckliga utveckling visar vikten av
+                att upprätthålla funktionsdugliga API:er, som spelar en
+                avgörande roll för att möjliggöra att webbapplikationer kan
+                leverera värdefull information till sina användare.
+              </p>
+              <div
+                class="project-thumnail project-image-div project-image-1 responsive-div"
+              >
+                <img
+                  class="project-image responsive-image"
+                  src="assets/images/uk4.png"
+                  alt="UK STAND UP"
+                />
+              </div>
+            </div>
+          </div>
+          <h3 class="website-link">
+            Du kan hitta den här webbplatsen
+            <a
+              target="_blank"
+              class="website-link-a"
+              href="https://theonorris.github.io/UK-Stand-Up/"
+              >här</a
+            >
+          </h3>
         </div>
-
+      </div>
     </section>
-    <!--Footer som har social länkar, och copyright information-->
+    <!--Footer with social media links and copyright info-->
     <footer>
-        <a href="https://www.github.com/theonorris" target="_blank"><i class="fa-brands fa-github social-links"></i></a>
-        <a href="https://www.linkedin.com/in/theo-norris-b22645183/" target="_blank"><i class="fa-brands fa-linkedin social-links"></i></a>
-        <p class="copyright-text">
-            © Theo Norris. All rights reserved. Website designed by
-            <a target="_blank" class="theo-tag" href="https://github.com/TheoNorris">Theo Norris</a>
-        </p>
+      <a href="https://www.github.com/theonorris" target="_blank"
+        ><i class="fa-brands fa-github social-links"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/theo-norris-b22645183/"
+        target="_blank"
+        ><i class="fa-brands fa-linkedin social-links"></i
+      ></a>
+      <p class="copyright-text">
+        © Theo Norris. All rights reserved. Website designed by
+        <a target="_blank" class="theo-tag" href="https://github.com/TheoNorris"
+          >Theo Norris</a
+        >
+      </p>
     </footer>
     <!--Script för bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

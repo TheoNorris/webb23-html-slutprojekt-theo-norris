@@ -1,596 +1,663 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Permanent+Marker&family=Tilt+Neon&display=swap');
- :root {
-    --big-text: 'Permanent Marker', cursive;
-    --my-padding: 20px;
-    --blue: rgb(0 112 255);
-    --purple: rgb(145, 31, 145);
-    --pink: rgb(241 0 255);
-    --darkmode-pink: rgb(255 0 255);
-    --darkmode-green: rgb(12 255 0);
+/*-------Google fonts--------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&family=Permanent+Marker&family=Tilt+Neon&display=swap");
+
+/*-------Variables--------*/
+
+:root {
+  --big-text: "Permanent Marker", cursive;
+  --my-padding: 20px;
+  --blue: rgb(0 112 255);
+  --purple: rgb(145, 31, 145);
+  --pink: rgb(241 0 255);
+  --darkmode-pink: rgb(255 0 255);
+  --darkmode-green: rgb(12 255 0);
 }
+
+/*-------Repeated properties--------*/
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Tilt Neon', cursive;
-    letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
+  font-family: "Tilt Neon", cursive;
+  letter-spacing: 2px;
 }
 
+/*-------Navbar--------*/
+
 .navbar-logo {
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-    height: 50px;
-    margin-bottom: 10px;
-    border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .navbar-logo:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .navbar-brand-dark {
-    display: none;
+  display: none;
 }
 
 .navbar-expand-lg .navbar-collapse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .navbar-links {
-    font-size: 120%;
-    margin-right: 30px;
+  font-size: 120%;
+  margin-right: 30px;
 }
 
 .nav-link {
-    color: var(--blue)
+  color: var(--blue);
 }
 
 .nav-link:hover {
-    color: var(--pink);
+  color: var(--pink);
 }
 
+/*-------Background image and overlay--------*/
+
 .overlay {
-    height: 100%;
-    min-height: 100vh;
-    background: linear-gradient(90deg, #ffffffb8, #ffffff);
-    z-index: 2;
-    max-width: 100vw;
-    width: 100%;
-    padding: 0 var(--my-padding);
+  height: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #ffffffb8, #ffffff);
+  z-index: 2;
+  max-width: 100vw;
+  width: 100%;
+  padding: 0 var(--my-padding);
 }
 
 .wrapper {
-    width: 100vw;
-    height: auto;
-    min-height: 100%;
-    background: url("../images/background-image.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 1;
+  width: 100vw;
+  height: auto;
+  min-height: 100%;
+  background: url("../images/background-image.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
 }
 
+/*-------H1's on each page--------*/
+
 .page-headers {
-    font-family: var(--big-text);
-    font-size: 375%;
-    margin-top: 30px;
-    color: var(--blue);
-    margin-bottom: 0;
-    text-shadow: 1px 1px black;
+  color: var(--blue);
+  font-size: 375%;
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-shadow: 1px 1px black;
 }
 
 .page-headers.line-2 {
-    font-size: 400%;
-    color: var(--purple);
-    margin: 0 auto;
-    width: 40%;
-    border-bottom: 3px solid;
-    padding-bottom: var(--my-padding);
+  font-family: var(--big-text);
+  font-size: 400%;
+  color: var(--purple);
+  margin: 0 auto;
+  width: 40%;
+  border-bottom: 3px solid;
+  padding-bottom: var(--my-padding);
 }
 
+/*-------Flex-box for pages containing images and text--------*/
+
 .main-page-div {
-    display: flex;
-    margin-top: 4%;
-    margin-bottom: 4%;
+  display: flex;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 
 .main-page-left {
-    width: 50%;
+  width: 50%;
 }
 
 .main-page-right {
-    width: 50%;
+  width: 50%;
 }
+
+/*-------information texts on pages with text--------*/
 
 .information-p {
-    padding: var(--my-padding) 5% 0;
-    font-size: 130%;
-    text-align: left;
-    margin-bottom: 0;
+  padding: var(--my-padding) 5% 0;
+  font-size: 130%;
+  text-align: left;
+  margin-bottom: 0;
 }
 
+/*-------Index.html div containing the different projects I've created, information, headers etc.--------*/
+
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3vh;
 }
 
 .project-image {
-    width: 90%;
+  width: 90%;
 }
 
 .project-name {
-    font-family: 'Londrina Solid', cursive;
-    letter-spacing: 3px;
-    padding: 10px var(--my-padding);
-    color: rgb(52 100 255);
-    margin-bottom: 0;
-    text-shadow: 0.5px 0.5px black;
+  font-family: "Londrina Solid", cursive;
+  letter-spacing: 3px;
+  padding: 10px var(--my-padding);
+  color: rgb(52 100 255);
+  margin-bottom: 0;
+  text-shadow: 0.5px 0.5px black;
 }
 
 .project-thumb-info {
-    font-size: 12px;
-    padding: 0 5px;
-    color: rgb(43, 43, 43);
+  font-size: 12px;
+  padding: 0 5px;
+  color: rgb(43, 43, 43);
 }
 
 .thumnail-link {
-    margin: 20px 10px 0;
-    width: 45%;
-    height: 350px;
-    background-color: #ffffff80;
-    padding-top: var(--my-padding);
-    border-radius: 15px;
-    text-decoration: none;
-    transition: 1s;
+  margin: 20px 10px 0;
+  width: 45%;
+  height: 350px;
+  background-color: #ffffff80;
+  padding-top: var(--my-padding);
+  border-radius: 15px;
+  text-decoration: none;
+  transition: 1s;
 }
 
 .thumnail-link:hover {
-    transform: scale(1.1);
-    border: 1px solid var(--purple);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  border: 1px solid var(--purple);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0 10px;
-}
-
-.social-links {
-    font-size: 22px;
-    color: var(--purple);
-}
-
-.social-links:hover {
-    color: var(--pink);
-}
-
-.theo-tag {
-    text-decoration: none;
-    font-family: var(--big-text);
-    color: var(--blue);
-    font-size: 20px;
-}
-
-.copyright-text {
-    margin-bottom: 5px;
-}
-
-.theo-tag:hover {
-    color: var(--purple);
-}
+/*-------About.html  header, image div and text--------*/
 
 .page-headers.line-2.about-header {
-    margin-top: 3%;
+  margin-top: 3%;
 }
 
 .about-page-left {
-    width: 50%;
-    padding: 40px;
-    position: relative;
+  width: 50%;
+  padding: 40px;
+  position: relative;
 }
 
 .about-image {
-    width: 90%;
-    border-radius: 25px;
-    opacity: 95%;
-    border: 2px solid var(--purple);
+  width: 90%;
+  border-radius: 25px;
+  opacity: 95%;
+  border: 2px solid var(--purple);
 }
 
 .overlay-about {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    color: black;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: black;
 }
 
 .top-p.information-p.about-p {
-    padding-top: 30px;
+  padding-top: 30px;
 }
+
+/*-------about.html responsive div for mobile view--------*/
 
 .responsive-div {
-    display: none;
+  display: none;
 }
 
-.project-image-div {
-    margin: 20px 10px 0;
-    height: 100%;
-    background-color: #ffffffcd;
-    padding-top: var(--my-padding);
-    border-radius: 15px;
-    padding-bottom: var(--my-padding);
-    border: 1px solid var(--blue);
-}
+/*-------UK stand and Theo Web developer up H1--------*/
 
-.project-image-1 {
-    width: 95%;
-}
-
-.project-image-23 {
-    width: 46%;
-    border: 1px solid var(--purple);
-}
-
-.project-image-4 {
-    width: 95%;
+.uk-header {
+  font-family: var(--big-text);
 }
 
 .page-headers.line-2.theo-header {
-    width: 40%;
+  width: 40%;
 }
 
+/*-------project.html main and image divs--------*/
+
+.main-page-div.project-page-div {
+  margin-bottom: 2%;
+}
+
+.project-image-div {
+  margin: 20px 10px 0;
+  height: 100%;
+  background-color: #ffffffcd;
+  padding-top: var(--my-padding);
+  border-radius: 15px;
+  padding-bottom: var(--my-padding);
+  border: 1px solid var(--blue);
+}
+
+.project-image-1 {
+  width: 95%;
+}
+
+.project-image-23 {
+  width: 46%;
+  border: 1px solid var(--purple);
+}
+
+.project-image-4 {
+  width: 95%;
+}
+
+/*-------project.html website links--------*/
+
 .website-link {
-    color: var(--blue);
-    font-family: var(--big-text);
-    margin-bottom: 2%;
+  color: var(--blue);
+  font-family: var(--big-text);
+  margin-bottom: 2%;
 }
 
 .website-link-a {
-    color: var(--purple);
-    font-family: var(--big-text);
-    text-decoration: none;
+  color: var(--purple);
+  font-family: var(--big-text);
+  text-decoration: none;
 }
 
 .website-link-a:hover {
-    color: rgb(241 0 255);
+  color: rgb(241 0 255);
 }
 
-.main-page-div.project-page-div {
-    margin-bottom: 2%;
-}
+/*-------contact.html form container and form--------*/
 
 .form-container {
-    padding: 30px 30px 10px;
-    width: 70%;
-    background: #ffffff63;
-    margin: 40px auto;
+  padding: 30px 30px 10px;
+  width: 70%;
+  background: #ffffff63;
+  margin: 40px auto;
 }
 
 .form-label {
-    display: flex;
+  display: flex;
 }
 
 .button-div {
-    display: flex;
-    flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .contact-h1 {
-    color: var(--purple);
-    margin-bottom: 10px;
+  color: var(--purple);
+  margin-bottom: 10px;
 }
 
 button#sub-but {
-    margin-top: 15px;
-    background-color: var(--blue);
-    border: none;
+  margin-top: 15px;
+  background-color: var(--blue);
+  border: none;
 }
 
 button#sub-but:hover {
-    background-color: var(--pink);
+  background-color: var(--pink);
 }
 
-@media (prefers-color-scheme:dark) {
-    nav {
-        background: black;
-        border-bottom: 1px solid rgb(166, 166, 166);
-    }
-    .nav-link.colour.active {
-        color: white;
-    }
-    .nav-link {
-        color: var(--darkmode-green);
-    }
-    .navbar-link:hover {
-        color: var(--darkmode-pink);
-    }
-    .nav-link.dropdown-toggle.active {
-        color: white;
-    }
-    button.navbar-toggler {
-        background-color: var(--darkmode-pink);
-    }
-    .navbar-brand-light {
-        display: none;
-    }
-    .navbar-brand-dark {
-        display: unset;
-    }
-    .overlay {
-        background: linear-gradient(90deg, #00000083, #000000);
-    }
-    * {
-        color: white;
-    }
-    img {
-        filter: brightness(85%);
-    }
-    .thumnail-link {
-        background-color: #00000083;
-    }
-    .page-headers {
-        color: var(--darkmode-green);
-    }
-    .page-headers.line-2 {
-        color: var(--darkmode-pink);
-    }
-    .project-name {
-        color: var(--darkmode-green);
-    }
-    .project-thumb-info {
-        color: rgb(255, 255, 255);
-    }
-    .project-image-div {
-        background-color: #000000cd;
-    }
-    .website-link {
-        color: var(--darkmode-green);
-    }
-    .website-link-a {
-        color: var(--darkmode-pink);
-    }
-    .website-link-a:hover {
-        color: var(--darkmode-green);
-    }
-    .form-container {
-        background-color: #00000083;
-    }
-    .contact-h1 {
-        color: var(--darkmode-pink);
-    }
-    button#sub-but {
-        background-color: var(--darkmode-pink);
-    }
-    button#sub-but:hover {
-        background-color: var(--darkmode-green);
-    }
-    footer {
-        background-color: black;
-        border-top: 1px solid rgb(166, 166, 166);
-        color: white;
-    }
-    .social-links {
-        font-size: 22px;
-        color: var(--darkmode-pink);
-    }
-    .social-links:hover {
-        font-size: 22px;
-        color: var(--darkmode-green);
-    }
-    .theo-tag {
-        color: var(--darkmode-green);
-    }
-    .theo-tag:hover {
-        color: var(--darkmode-pink);
-    }
+/*-------footer, social links etc.--------*/
+
+footer {
+  text-align: center;
+  padding: 20px 0 10px;
 }
 
+.social-links {
+  font-size: 22px;
+  color: var(--purple);
+}
+
+.social-links:hover {
+  color: var(--pink);
+}
+
+.theo-tag {
+  text-decoration: none;
+  font-family: var(--big-text);
+  color: var(--blue);
+  font-size: 20px;
+}
+
+.copyright-text {
+  margin-bottom: 5px;
+}
+
+.theo-tag:hover {
+  color: var(--purple);
+}
+
+/*-------Properties for dark mode--------*/
+
+@media (prefers-color-scheme: dark) {
+  /*-------Navbar--------*/
+  nav {
+    background: black;
+    border-bottom: 1px solid rgb(166, 166, 166);
+  }
+  .nav-link.colour.active {
+    color: white;
+  }
+  .nav-link {
+    color: var(--darkmode-green);
+  }
+  .navbar-link:hover {
+    color: var(--darkmode-pink);
+  }
+  .nav-link.dropdown-toggle.active {
+    color: white;
+  }
+  button.navbar-toggler {
+    background-color: var(--darkmode-pink);
+  }
+  .navbar-brand-light {
+    display: none;
+  }
+  .navbar-brand-dark {
+    display: unset;
+  }
+  /*-------Background and general--------*/
+  .overlay {
+    background: linear-gradient(90deg, #00000083, #000000);
+  }
+  * {
+    color: white;
+  }
+  /*-------H1's--------*/
+  .page-headers {
+    color: var(--darkmode-green);
+  }
+  .page-headers.line-2 {
+    color: var(--darkmode-pink);
+  }
+
+  /*-------Image brightness--------*/
+  img {
+    filter: brightness(85%);
+  }
+  /*-------project.html--------*/
+  .thumnail-link {
+    background-color: #00000083;
+  }
+  .project-name {
+    color: var(--darkmode-green);
+  }
+  .project-thumb-info {
+    color: rgb(255, 255, 255);
+  }
+  .project-image-div {
+    background-color: #000000cd;
+  }
+  .website-link {
+    color: var(--darkmode-green);
+  }
+  .website-link-a {
+    color: var(--darkmode-pink);
+  }
+  .website-link-a:hover {
+    color: var(--darkmode-green);
+  }
+  /*-------contact.html form--------*/
+  .form-container {
+    background-color: #00000083;
+  }
+  .contact-h1 {
+    color: var(--darkmode-pink);
+  }
+  button#sub-but {
+    background-color: var(--darkmode-pink);
+  }
+  button#sub-but:hover {
+    background-color: var(--darkmode-green);
+  }
+  /*-------Footer and social links etc--------*/
+  footer {
+    background-color: black;
+    border-top: 1px solid rgb(166, 166, 166);
+    color: white;
+  }
+  .social-links {
+    font-size: 22px;
+    color: var(--darkmode-pink);
+  }
+  .social-links:hover {
+    font-size: 22px;
+    color: var(--darkmode-green);
+  }
+  .theo-tag {
+    color: var(--darkmode-green);
+  }
+  .theo-tag:hover {
+    color: var(--darkmode-pink);
+  }
+}
+/*-------Responsiveness across devices--------*/
 @media (max-width: 1280px) {
-    .page-headers.line-2 {
-        width: 40%;
-    }
-    .information-p.project-p {
-        padding: var(--my-padding) 0 0 10px;
-        margin-left: 10px;
-    }
-    .about-image {
-        width: 100%;
-    }
-    .main-page-div.about-page-div {
-        display: unset;
-    }
-    .about-page-left {
-        float: left;
-        height: 100%;
-        padding: 40px 40px var(--my-padding);
-    }
-    .main-page-right.about-page-right {
-        margin: auto;
-        width: 100%;
-    }
-    .information-p.about-p {
-        text-align: left;
-    }
-    .information-p.about-p.about-p-bottom {
-        margin-bottom: 30px;
-    }
+  /*-------General H1's--------*/
+  .page-headers.line-2 {
+    width: 40%;
+  }
+  /*-------project.html--------*/
+  .information-p.project-p {
+    padding: var(--my-padding) 0 0 10px;
+    margin-left: 10px;
+  }
+  /*-------about.html--------*/
+  .about-image {
+    width: 100%;
+  }
+  .main-page-div.about-page-div {
+    display: unset;
+  }
+  .about-page-left {
+    float: left;
+    height: 100%;
+    padding: 40px 40px var(--my-padding);
+  }
+  .main-page-right.about-page-right {
+    margin: auto;
+    width: 100%;
+  }
+  .information-p.about-p {
+    text-align: left;
+  }
+  .information-p.about-p.about-p-bottom {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 1025px) {
-    .information-p.project-p {
-        font-size: 90%;
-    }
-    .project-image-23 {
-        width: 45%;
-    }
+  /*-------Project.html--------*/
+  .information-p.project-p {
+    font-size: 90%;
+  }
+  .project-image-23 {
+    width: 45%;
+  }
 }
 
 @media (max-width: 991px) {
-    .main-page-div.index-div {
-        flex-direction: column-reverse;
-    }
-    .main-page-right.index-right {
-        width: 100%;
-    }
-    .main-page-left.index-left {
-        width: 100%;
-        margin-top: 30px;
-    }
-    .project-thumb-info {
-        padding: 0 10px;
-    }
-    .page-headers.line-2 {
-        width: 80%;
-    }
-    .information-p {
-        text-align: center;
-    }
-    .information-p.project-p {
-        text-align: left;
-    }
-    .project-image-23 {
-        width: 100%;
-    }
+  /*-------General flex-box containing page info--------*/
+  .main-page-div.index-div {
+    flex-direction: column-reverse;
+  }
+  /*-------General H1's and information texts--------*/
+  .page-headers.line-2 {
+    width: 80%;
+  }
+  .information-p {
+    text-align: center;
+  }
+  /*-------Index.html--------*/
+  .main-page-right.index-right {
+    width: 100%;
+  }
+  .main-page-left.index-left {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .project-thumb-info {
+    padding: 0 10px;
+  }
+  /*-------Project.html--------*/
+  .information-p.project-p {
+    text-align: left;
+  }
+  .project-image-23 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 595px) {
-    .navbar-logo {
-        height: 35px;
-    }
-    .page-headers {
-        font-size: 250%;
-        margin-top: 10px;
-    }
-    .page-headers.line-2 {
-        font-size: 290%;
-        padding-bottom: 10px;
-    }
-    .information-p {
-        font-size: 100%;
-    }
-    .main-page-div {
-        flex-direction: column-reverse;
-    }
-    .main-page-project-right {
-        width: 100%;
-    }
-    .main-page-project-left {
-        display: none;
-    }
-    .responsive-div {
-        display: contents;
-        width: 100%;
-        margin: 10px 0;
-    }
-    .responsive-image {
-        margin: 20px 0 10px;
-    }
-    .information-p.project-p {
-        padding-top: 10px;
-    }
-    .website-link {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    .information-p.project-p {
-        padding-left: 0;
-    }
-    .project-image {
-        width: 95%;
-    }
-    .top-p.information-p.about-p {
-        padding-top: 10px;
-    }
-    .about-page-left {
-        width: 100%;
-        padding: 10px;
-        margin: 20px auto;
-    }
-    .information-p.about-p {
-        margin-bottom: 0;
-    }
-    .form-container {
-        width: 90%;
-        padding: 15px 15px 10px;
-    }
-    button#sub-but {
-        margin: 0;
-    }
-    footer {
-        font-size: 10px;
-        padding: 10px;
-    }
-    .social-links {
-        font-size: 15px;
-    }
-    .theo-tag {
-        font-size: 12px;
-    }
-    @media (max-width: 420px) {
-        .thumnail-link {
-            width: 100%;
-        }
-        .main-page-left.index-left {
-            margin-top: 20px;
-        }
-        .information-p {
-            text-align: left;
-        }
-        .project-thumb-info {
-            padding: 0 15px;
-        }
-        .page-headers.line-2 {
-            width: 90%;
-        }
-        .top-p.information-p {
-            padding-top: 10px;
-        }
-    }
-    .main-page-div {
-        flex-direction: column-reverse;
-    }
-    .main-page-project-right {
-        width: 100%;
-    }
-    .main-page-project-left {
-        display: none;
-    }
-    .responsive-div {
-        display: contents;
-        width: 100%;
-        margin: 10px 0;
-    }
-    .responsive-image {
-        margin: 20px 0 10px;
-    }
-    .information-p.project-p {
-        padding-top: 10px;
-    }
-    .website-link {
-        font-size: 20px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-    .information-p.project-p {
-        padding-left: 0;
-    }
-    .project-image {
-        width: 95%;
-    }
+  /*-------Navbar--------*/
+  .navbar-logo {
+    height: 35px;
+  }
+  /*-------General H1's and texts--------*/
+  .page-headers {
+    font-size: 250%;
+    margin-top: 10px;
+  }
+  .page-headers.line-2 {
+    font-size: 290%;
+    padding-bottom: 10px;
+  }
+  .information-p {
+    font-size: 100%;
+  }
+  /*-------General flex-box and divs--------*/
+  .main-page-div {
+    flex-direction: column-reverse;
+  }
+  .main-page-project-right {
+    width: 100%;
+  }
+  .main-page-project-left {
+    display: none;
+  }
+  /*-------Project.html responsive divs that place images inbetween text instead of to the side--------*/
+  .responsive-div {
+    display: contents;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .responsive-image {
+    margin: 20px 0 10px;
+  }
+  /*-------Project.html--------*/
+  .information-p.project-p {
+    padding-top: 10px;
+  }
+  .website-link {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .information-p.project-p {
+    padding-left: 0;
+  }
+  .project-image {
+    width: 95%;
+  }
+  /*-------About.html--------*/
+  .top-p.information-p.about-p {
+    padding-top: 10px;
+  }
+  .about-page-left {
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+  }
+  .information-p.about-p {
+    margin-bottom: 0;
+  }
+  /*-------Contact.html--------*/
+  .form-container {
+    width: 90%;
+    padding: 15px 15px 10px;
+  }
+  button#sub-but {
+    margin: 0;
+  }
+  /*-------Footer--------*/
+  footer {
+    font-size: 10px;
+    padding: 10px;
+  }
+  .social-links {
+    font-size: 15px;
+  }
+  .theo-tag {
+    font-size: 12px;
+  }
+}
+@media (max-width: 420px) {
+  /*-------General divs, headers and text--------*/
+  .main-page-div {
+    flex-direction: column-reverse;
+  }
+  .page-headers.line-2 {
+    width: 90%;
+  }
+  .information-p {
+    text-align: left;
+  }
+  /*-------Index.html--------*/
+  .thumnail-link {
+    width: 100%;
+  }
+  .main-page-left.index-left {
+    margin-top: 20px;
+  }
+  .project-thumb-info {
+    padding: 0 15px;
+  }
+  /*-------Project.html--------*/
+  .top-p.information-p {
+    padding-top: 10px;
+  }
+  .main-page-project-right {
+    width: 100%;
+  }
+  .main-page-project-left {
+    display: none;
+  }
+  .responsive-div {
+    display: contents;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .responsive-image {
+    margin: 20px 0 10px;
+  }
+  .information-p.project-p {
+    padding-top: 10px;
+  }
+  .website-link {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .information-p.project-p {
+    padding-left: 0;
+  }
+  .project-image {
+    width: 95%;
+  }
 }
 
 @media (max-width: 280px) {
-    .page-headers {
-        font-size: 150%;
-    }
-    .page-headers.line-2 {
-        font-size: 180%;
-    }
-    .information-p {
-        font-size: 75%;
-    }
+  /*-------General--------*/
+  .page-headers {
+    font-size: 150%;
+  }
+  .page-headers.line-2 {
+    font-size: 180%;
+  }
+  .information-p {
+    font-size: 75%;
+  }
 }

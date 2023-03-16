@@ -1,0 +1,79 @@
+:root {
+  --big-text: "Permanent Marker", cursive;
+}
+.intro-1 {
+  animation: intro-text 1.3s;
+}
+
+.intro-2 {
+  animation: intro-text 1.5s;
+}
+
+.intro-3 {
+  animation: intro-text 1.7s;
+}
+
+.intro-4 {
+  animation: intro-text 1.9s;
+}
+
+.intro-5 {
+  animation: intro-text 2.1s;
+}
+
+.intro-6 {
+  animation: intro-text 2.3s;
+}
+
+.intro-7 {
+  animation: intro-text 2.5s;
+}
+
+.intro-8 {
+  animation: intro-text 2.7s;
+}
+
+.intro-9 {
+  animation: intro-text 2.9s;
+}
+
+.intro-10 {
+  animation: intro-text 3.1s;
+}
+
+.intro-11 {
+  animation: intro-text 3.3s;
+}
+
+.intro-12 {
+  animation: intro-text 3.5s;
+}
+
+.intro-13 {
+  animation: intro-text 3.7s;
+}
+
+.intro-14 {
+  font-family: var(--big-text);
+  animation-name: intro-bottom;
+  animation-duration: 2s;
+  animation-delay: 4s;
+}
+
+@keyframes intro-text {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+@keyframes intro-bottom {
+  0% {
+    font-size: unset;
+  }
+  100% {
+    font-size: 120%;
+  }
+}
